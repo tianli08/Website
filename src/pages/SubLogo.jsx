@@ -32,24 +32,3 @@ function Sublogo() {
 }
 
 export default Sublogo;
-
-// .menu {
-//
-//     ;
-//     font-family: "Satoshi";
-//   }
-
-//   .menuwl {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//
-//   }
-
-//   .menuname {
-//
-//     font-size: 30px;
-//     letter-spacing: 0em;
-//     color: white;
-//     text-decoration: none;
-//   }

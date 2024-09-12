@@ -35,8 +35,8 @@ function AboutMe() {
             textAlign: "left",
             display: "flex",
             justifyContent: "center",
-            position: "relative", // Ensure positioning is relative for transform
-            transform: "translate(0%, 10%)", // Adjust 'x' and 'y' here
+            position: "relative",
+            transform: "translate(0%, 10%)",
           }}
         >
           <div style={{ maxWidth: "90%", margin: "1%" }}>
@@ -78,8 +78,8 @@ function AboutMe() {
             textAlign: "left",
             display: "flex",
             justifyContent: "center",
-            position: "relative", // Ensure positioning is relative for transform
-            transform: "translate(0%, 20%)", // Adjust 'x' and 'y' here
+            position: "relative",
+            transform: "translate(0%, 20%)",
           }}
         >
           <div style={{ maxWidth: "90%", margin: "1%" }}>

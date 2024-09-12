@@ -24,28 +24,28 @@ function Media() {
       >
         <div
           style={{
-            display: "flex", // Make boxes align horizontally
-            flexDirection: "row", // Horizontal alignment
-            justifyContent: "center", // Center horizontally
-            alignItems: "center", // Center vertically
-            width: "100%", // Ensure it takes full width
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
           }}
         >
-          {/* Box 1 - Move down */}
+          {/* Box 1*/}
           <div
             style={{
               background: "linear-gradient(135deg, #ff9966, #ff5e62)",
 
-              height: "250px", // Make it square
-              width: "250px", // Equal width and height
+              height: "250px",
+              width: "250px",
               borderRadius: "32px",
-              margin: "20px", // Space between boxes
+              margin: "20px",
               boxShadow:
                 "5px 5px 15px hsla(0, 0%, 100%, 0.3), 10px 10px 20px hsla(0, 0%, 100%, 0.2)",
-              transform: "translateY(200%)", // Move it down
+              transform: "translateY(200%)",
             }}
           />
-          {/* Box 2 - Keep in center */}
+          {/* Box 2*/}
           <div
             style={{
               background: "linear-gradient(135deg, #6a11cb, #2575fc)",
@@ -57,7 +57,7 @@ function Media() {
                 "5px 5px 15px hsla(0, 0%, 100%, 0.3), 10px 10px 20px hsla(0, 0%, 100%, 0.2)",
             }}
           />
-          {/* Box 3 - Move down */}
+          {/* Box 3*/}
           <div
             style={{
               background: "linear-gradient(135deg, #ffafbd, #ffc3a0)",
@@ -67,7 +67,7 @@ function Media() {
               margin: "20px",
               boxShadow:
                 "5px 5px 15px hsla(0, 0%, 100%, 0.3), 10px 10px 20px hsla(0, 0%, 100%, 0.2)",
-              transform: "translateY(200%)", // Move it down
+              transform: "translateY(200%)",
             }}
           />
         </div>

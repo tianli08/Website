@@ -21,7 +21,7 @@ function Logo() {
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
         setCurrentIndex((prev) => prev + 1);
-      }, Math.random() * 400 + 300); // Random delay between 200ms and 500ms for typing effect
+      }, Math.random() * 400 + 300);
       return () => clearTimeout(timeout);
     } else {
       setIsTyping(false);

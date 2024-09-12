@@ -4,9 +4,9 @@ function SubFooter() {
       className="no-select"
       style={{
         position: "absolute",
-        bottom: "0", // Aligns the element to the bottom
-        left: "50%", // Positions the element at the center horizontally
-        transform: "translateX(-50%)", // Offsets the element by half its width to center it correctly
+        bottom: "0",
+        left: "50%",
+        transform: "translateX(-50%)",
         fontSize: "7px",
         margin: "0",
         padding: "0",
@@ -22,12 +22,3 @@ function SubFooter() {
 }
 
 export default SubFooter;
-
-//   style={{
-//     backgroundColor: "black",
-//     height: "100vh",
-//     color: "white",
-//     textAlign: "center",
-//     display: "flex",
-//     flexDirection: "column",
-//   }}
