@@ -1,9 +1,9 @@
-function Bar() {
-  return (
-    <header>
-      <hr />
-    </header>
-  );
-}
+// function Bar() {
+//   return (
+//     <header>
+//       <hr />
+//     </header>
+//   );
+// }
 
-export default Bar;
+// export default Bar;

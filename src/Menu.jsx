@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 
 function Menu() {
   return (
-    <main className="menu">
+    <nav className="menu">
       <div className="menuwl">
+        {/* Logo */}
         <motion.a
           className="menuname"
           whileHover={{ scale: 1.1 }}
@@ -12,6 +13,8 @@ function Menu() {
         >
           TLi.
         </motion.a>
+
+        {/* Links */}
         <div className="menulinks">
           <motion.a
             whileHover={{ scale: 1.1 }}
@@ -39,7 +42,7 @@ function Menu() {
           </motion.a>
         </div>
       </div>
-    </main>
+    </nav>
   );
 }
 

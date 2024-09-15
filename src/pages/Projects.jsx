@@ -1,7 +1,7 @@
-// Concept by mattgperry for Framer Motion: Parallax
 import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import Sublogo from "./SubLogo";
+import Cursor from "../Cursor.jsx";
+import Menu from "../Menu";
 
 function useParallax(value, distance) {
   return useTransform(value, [0, 1], [-distance, distance]);
@@ -27,13 +27,14 @@ function Image({ id, title, desc }) {
       <div
         ref={ref}
         style={{
-          width: "300px",
-          height: "400px",
+          width: "700px",
+          height: "800px",
           position: "relative",
           maxHeight: "90vh",
           margin: "20px",
           background: "var(--white)",
           overflow: "hidden",
+          left: "-5%",
         }}
       >
         <img
@@ -50,7 +51,8 @@ function Image({ id, title, desc }) {
           }}
         />
       </div>
-      <motion.h2
+
+      <motion.div
         style={{
           margin: "0",
           color: "var(--accent)",
@@ -61,9 +63,10 @@ function Image({ id, title, desc }) {
           lineHeight: "1.2",
           position: "absolute",
           y,
+          mixBlendMode: "difference",
         }}
       >
-        {`${title}`}
+        {title}
         <p
           style={{
             marginTop: "1%",
@@ -71,11 +74,12 @@ function Image({ id, title, desc }) {
             fontWeight: "500",
             letterSpacing: "1px",
             marginRight: "8%",
+            mixBlendMode: "difference",
           }}
         >
-          {`${desc}`}
+          {desc}
         </p>
-      </motion.h2>
+      </motion.div>
     </section>
   );
 }
@@ -90,7 +94,7 @@ export default function App() {
 
   const descs = [
     "Displays a wide showcase of all my projects. Links can be found to the page on my Github.",
-    "Made using Arduino Leonardo and C++, this is a fully functional wireless xBox controller with lots of specs.",
+    "Built with an Arduino Leonardo and C++, this wireless Xbox controller is designed for individuals with cerebral palsy, featuring adaptive and advanced specs for improved accessibility.",
     "Virtual reality software made in Unity and C# used to promote anti-autonomous weapons in the future.",
     "Website development with seamless and dynamic user experience. Dynamic routing and API data fetching results in a more user friendly site.",
     "Founded ecommerce platform HypeRetrieve, using React and Next.js along with social media. Leveraging over $175,000 in total revenue.",
@@ -98,9 +102,26 @@ export default function App() {
 
   const titles = [
     "Projects",
-    "Accessibility xBox Controller",
+    <a
+      href="https://shorturl.at/K0dD4"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        margin: "0",
+        color: "var(--accent)",
+        left: "calc(50% + 130px)",
+        fontSize: "56px",
+        fontWeight: "700",
+        letterSpacing: "-3px",
+        lineHeight: "1.2",
+        textDecoration: "none",
+      }}
+    >
+      Accessible xBox Controller &rarr;
+    </a>,
+
     "Autonomous VR",
-    "Website Coding",
+    "Website Development",
     "HypeRetrieve",
   ];
 
@@ -111,28 +132,19 @@ export default function App() {
           position: "fixed",
           top: "0",
           left: "0",
-          zIndex: "1000",
+          zIndex: "10000",
           padding: "0%",
+          mixBlendMode: "difference",
         }}
       >
-        <Sublogo />
+        <Cursor />
       </div>
-
+      <Menu />
       <style>{`
         body {
           --black: #181818;
           --ash-black: #222;
           --white: #fafafa;
-          --sky: #00ccff;
-          --green: #22dddd;
-          --blue: #1300ff;
-          --dusk: #6600ff;
-          --purple: #9900ff;
-          --pink: #ff0066;
-          --red: #fe0222;
-          --orange: #fd7702;
-          --yellow: #ffbb00;
-
           --background: var(--black);
           --accent: var(--white);
 
@@ -188,6 +200,7 @@ export default function App() {
           scroll-snap-type: y mandatory;
         }
       `}</style>
+
       {descs.map((desc, index) => (
         <Image key={index} id={index + 1} title={titles[index]} desc={desc} />
       ))}

@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./Footer.jsx";
 import Menu from "./Menu.jsx";
 import Logo from "./Logo.jsx";
-import Bar from "./Bar.jsx";
 import Starfield from "./Starfield.jsx";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Media from "./pages/Media";
+import Count from "./Count.jsx";
 import SubStarfield from "./pages/SubStarfield";
+import Cursor from "./Cursor.jsx";
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
               <Starfield />
               <div className="func">
                 <Menu />
-                <Bar />
               </div>
               <div className="app">
+                <Cursor />
                 <Logo />
                 <Footer />
               </div>

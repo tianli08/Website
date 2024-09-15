@@ -1,15 +1,20 @@
 import React from "react";
+import Cursor from "../Cursor.jsx";
 import Starfield from "../Starfield";
 import Sublogo from "./SubLogo";
 import SubFooter from "./SubFooter";
 import Footer from "../Footer";
 import SubStarfield from "./SubStarfield";
+import Menu from "../Menu.jsx";
 
 function AboutMe() {
   return (
     <div>
       <SubStarfield />
-      <Sublogo />
+
+      <Cursor />
+      <Menu />
+
       <div
         style={{
           minHeight: "100vh",
@@ -36,7 +41,7 @@ function AboutMe() {
             display: "flex",
             justifyContent: "center",
             position: "relative",
-            transform: "translate(0%, 10%)",
+            transform: "translate(0%, 40%)",
           }}
         >
           <div style={{ maxWidth: "90%", margin: "1%" }}>
@@ -79,7 +84,7 @@ function AboutMe() {
             display: "flex",
             justifyContent: "center",
             position: "relative",
-            transform: "translate(0%, 20%)",
+            transform: "translate(0%, 50%)",
           }}
         >
           <div style={{ maxWidth: "90%", margin: "1%" }}>

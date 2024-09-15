@@ -1,15 +1,18 @@
 import React from "react";
+import Cursor from "../Cursor.jsx";
 import Starfield from "../Starfield";
 import Sublogo from "./SubLogo";
 import SubFooter from "./SubFooter";
 import Footer from "../Footer";
+import Menu from "../Menu.jsx";
 import SubStarfield from "./SubStarfield";
 
 function Media() {
   return (
     <div>
       <SubStarfield />
-      <Sublogo />
+      <Menu />
+      <Cursor />
       <div
         style={{
           minHeight: "100vh",
@@ -55,6 +58,7 @@ function Media() {
               margin: "20px",
               boxShadow:
                 "5px 5px 15px hsla(0, 0%, 100%, 0.3), 10px 10px 20px hsla(0, 0%, 100%, 0.2)",
+              transform: "translateY(200%)",
             }}
           />
           {/* Box 3*/}
