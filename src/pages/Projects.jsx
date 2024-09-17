@@ -103,7 +103,7 @@ export default function App() {
   const titles = [
     "Projects",
     <a
-      href="https://shorturl.at/K0dD4"
+      href="https://github.com/tianli08/xBox-Controller-for-Cerebral-Palsy"
       target="_blank"
       rel="noopener noreferrer"
       style={{
